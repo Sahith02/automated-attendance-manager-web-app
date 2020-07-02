@@ -22,4 +22,4 @@ This is the web app part of the complete automated attendance manager applicatio
 * view all students details page with detailed summary and attendance status
 
 ### Other part of the project:
-The other part of the project (web app and face recognition) can be found [here](https://github.com/Sahith02/automated-attendance-manager-react-native).
+The other part of the project (react-native android app) can be found [here](https://github.com/Sahith02/automated-attendance-manager-react-native).
