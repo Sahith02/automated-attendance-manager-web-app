@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<title>View Students</title>
+	<link rel="stylesheet" type="text/css" href="view.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm bg-info navbar-dark">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>                       
+            </button> -->
+            <img src="pes.jpg" alt="LOGO" style="width:60px;height:65px">
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="webprofile.html" id="domains" data-toggle="collapse" data-target="#submenu1" aria-expanded="false">MY PROFILE</a></li>
+              <li><a href="index.html" id="add" data-toggle="collapse" data-target="#submenu2" aria-expanded="false">ADD STUDENT</a></li>
+              <li><a href="update.html" id="attendance" data-toggle="collapse" data-target="#submenu3" aria-expanded="false">EDIT ATTENDANCE</a></li>
+              <li><a href="view.html" id="view" data-toggle="collapse" data-target="#submenu4" aria-expanded="false">VIEW ATTENDANCE</a></li>
+              
+
+              
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="loginmp.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+              </ul>
+        
+          </div>
+        </div>
+      </nav>
+	<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+	<script type="text/javascript" src="view.js"></script>
+</body>
+</html>

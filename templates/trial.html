@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color:lightblue;
+      color: navy;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px; color: navy;}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+    #text_to_post{
+      background-color: beige;
+    }
+    textarea{
+        margin-bottom: 1%;
+    }
+  </style>
+</head>
+<body>
+
+  <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      //<firebase-configuration-goes-here>
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+    // function getData() {
+    //   firebase.database().ref('/').once('value',function(snapshot))
+    //     snapshot.forEach(function(childSnapshot)
+    //     {
+    //       var childKey = childSnapshot.key;
+    //       var childData = childSnapshot.val();
+    //       document.getElementById("data").innerHTML
+    //     })
+    //   }
+    // }
+  </script>
+
+    <nav class="navbar navbar-expand-sm bg-info navbar-dark"> <!--navbar-inverse bg-info">-->
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>                       
+            </button>
+            <img src="pes.jpg" alt="LOGO" style="width:50px;height:50px">
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#sideoptions" id="domains" data-toggle="collapse" data-target="#submenu1" aria-expanded="false">MY PROFILE</a></li>
+              <li class="active"><a href="#sideoptions1" id="attendance" data-toggle="collapse" data-target="#submenu2" aria-expanded="false">EDIT ATTENDANCE</a></li>
+              
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="loginmp.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+              </ul>
+        
+          </div>
+        </div>
+      </nav>
+
+      <div  class="nav collapse" id="submenu1" role="menu" aria-labelledby="domains"> 
+        <table>
+            <img style="margin-left:5px;" src="supriyamaam.jpg" width="200" height="200" />
+            </table>
+            <h2>My Profile</color></h2>
+            </form>
+            <fieldset>
+                &nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <label for="name"><b>Name</b></label>
+                <span>&#58;        Prof.Supriya MC</span><br/>
+            
+                <br/>&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <label for="Department"><b>Department</b></label>
+                <span>&#58;         Computer Science</span><br/>
+            
+                <br/>&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <label for="email"><b>Email</b></label>
+                <span>&#58;          supriya@pesu.edu</span><br/>
+                
+                <br/>&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <label for="subjects"><b>Subjects teaching </b></label>
+                <span>&#58;          MPCA,Networking</span><br/>
+            
+                <br/>&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <label for="classes"><b>Classes teaching</b></label>
+                <span>&#58;          4H,6D</span><br/>
+            
+                </fieldset>
+     </div>
+
+     <p id = "data"> </p>
+
+
+  <script src="/__/firebase/7.14.1/firebase-app.js"></script>
+  <script src="/__/firebase/7.14.1/firebase-analytics.js"></script>
+  <script src="/__/firebase/7.14.1/firebase-auth.js"></script>
+  <script src="/__/firebase/7.14.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+
+
+<script src="/__/firebase/init.js"></script>
+
+</body>
+</html>

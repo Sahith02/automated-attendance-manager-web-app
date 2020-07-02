@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Update Attendance</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-info navbar-dark"> 
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> 
+               <span class="icon-bar"></span>                        
+            </button>  -->
+            <img src="pes.jpg"  alt="LOGO" style="width:60px;height:63px">
+          </div>
+        
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="webprofile.html" id="domains" data-toggle="collapse" data-target="#submenu1" aria-expanded="false">MY PROFILE</a></li>
+              <li class="active"><a href="index.html" id="add" data-toggle="collapse" data-target="#submenu2" aria-expanded="false">ADD STUDENT</a></li>
+              <li class="active"><a href="update.html" id="attendance" data-toggle="collapse" data-target="#submenu3" aria-expanded="false">EDIT ATTENDANCE</a></li>
+              <li class="active"><a href="view.html" id="view" data-toggle="collapse" data-target="#submenu4" aria-expanded="false">VIEW ATTENDANCE</a></li>
+              
+
+              
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="loginmp.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+              </ul>
+        
+          </div>
+        </div>
+      </nav>
+  <main>
+    <form>
+        <label for="SRN">SRN</label><br>
+        <input type="text" name="SRN" id="sSRN" required>
+        <br>
+        <br>
+
+        <label for="subjects">Choose a Subject :</label>
+        <select id="subject" onchange="changesub();">
+          <option id="UE18CS251" value="UE18CS251">UE18CS251</option>
+          <option id="UE18CS252" value="UE18CS252">UE18CS252</option>
+          <option id="UE18CS253" value="UE18CS253">UE18CS253</option>
+          <option id="UE18CS254" value="UE18CS254">UE18CS254</option>
+          <option id="UE18MA251" value="UE18MA251">UE18MA251</option>
+        </select>
+        <br>
+    
+
+        <label for="dates">Choose a Date :</label>
+        <select id="date" onchange="changedate()">
+          <option id="1-1-20" value="1-1-20">1-1-20</option>
+          <option id="2-1-20" value="2-1-20">2-1-20</option>
+          <option id="3-1-20" value="3-1-20">3-1-20</option>
+          <option id="4-1-20" value="4-1-20">4-1-20</option>
+          <option id="5-1-20" value="5-1-20">5-1-20</option>
+          <option id="6-1-20" value="6-1-20">6-1-20</option>
+        </select>
+        <br>
+        <br>
+        <label for="new">Enter New Attendance</label><br>
+        <input type="text" name="new" id="newatt" required>
+        
+
+        <button id="updateBtn" class="btn waves-effect waves-light">Update</button>
+        
+    </form>
+  </main>
+
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    //<firebase-configuration-goes-here>
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+    <script src="./hardcode.js"> </script>
+  
+
+</body>
+</html>  

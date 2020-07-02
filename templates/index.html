@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Add Student</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-info navbar-dark"> 
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> 
+               <span class="icon-bar"></span>                        
+            </button>  -->
+            <img src="pes.jpg"  alt="LOGO" style="width:60px;height:63px">
+          </div>
+        
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="webprofile.html" id="domains" data-toggle="collapse" data-target="#submenu1" aria-expanded="false">MY PROFILE</a></li>
+              <li class="active"><a href="index.html" id="add" data-toggle="collapse" data-target="#submenu2" aria-expanded="false">ADD STUDENT</a></li>
+              <li class="active"><a href="update.html" id="attendance" data-toggle="collapse" data-target="#submenu3" aria-expanded="false">EDIT ATTENDANCE</a></li>
+              <li class="active"><a href="view.html" id="view" data-toggle="collapse" data-target="#submenu4" aria-expanded="false">VIEW ATTENDANCE</a></li>
+              
+
+              
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="loginmp.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+              </ul>
+        
+          </div>
+        </div>
+      </nav>
+  <main>
+    <form>
+        <label for="SRN">SRN</label><br>
+        <input type="text" name="SRN" id="sSRN" required><br>
+        <label for="Name">Student Name</label><br>
+        <input type="text" name="Name" id="sname" required><br>
+        <label for="pswrd">Password</label><br>
+        <input type="text" name="pswrd" id="psw" required><br>  
+        <label for="profile">Profile Picture link</label><br>
+        <input type="text" name="profile" id="ppl" required><br>
+        
+        <h7>UE18CS251</h7><br><br>
+        <label for="1-1-2020">1-1-2020</label><br>
+        <input type="number" name="att251-1" id="251-1" required><br>
+        <label for="2-1-2020">2-1-2020</label><br>
+        <input type="number" name="att251-2" id="251-2" required><br>
+        <label for="4-1-2020">4-1-2020</label><br>
+        <input type="number" name="att251-4" id="251-4" required><br>
+        <label for="5-1-2020">5-1-2020</label><br>
+        <input type="number" name="att251-5" id="251-5" required><br>
+        
+        <h7>UE18CS252</h7><br><br>
+        <label for="1-1-2020">1-1-2020</label><br>
+        <input type="number" name="att252-1" id="252-1" required><br>
+        <label for="2-1-2020">2-1-2020</label><br>
+        <input type="number" name="att252-2" id="252-2" required><br>
+        <label for="4-1-2020">4-1-2020</label><br>
+        <input type="number" name="att252-4" id="252-4" required><br>
+        <label for="5-1-2020">5-1-2020</label><br>
+        <input type="number" name="att252-5" id="252-5" required><br>
+        
+        <h7>UE18CS253</h7><br><br>
+        <label for="1-1-2020">1-1-2020</label><br>
+        <input type="number" name="att253-1" id="253-1" required><br>
+        <label for="2-1-2020">2-1-2020</label><br>
+        <input type="number" name="att253-2" id="253-2" required><br>
+        <label for="4-1-2020">4-1-2020</label><br>
+        <input type="number" name="att253-4" id="253-4" required><br>
+        <label for="5-1-2020">5-1-2020</label><br>
+        <input type="number" name="att253-5" id="253-5" required><br>
+        
+        <h7>UE18CS254</h7><br><br>
+        <label for="1-1-2020">1-1-2020</label><br>
+        <input type="number" name="att254-1" id="254-1" required><br>
+        <label for="2-1-2020">2-1-2020</label><br>
+        <input type="number" name="att254-2" id="254-2" required><br>
+        <label for="4-1-2020">4-1-2020</label><br>
+        <input type="number" name="att254-4" id="254-4" required><br>
+        <label for="5-1-2020">5-1-2020</label><br>
+        <input type="number" name="att254-5" id="254-5" required><br>
+        
+        <h7>UE18CS255</h7><br><br>
+        <label for="1-1-2020">1-1-2020</label><br>
+        <input type="number" name="att255-1" id="255-1" required><br>
+        <label for="2-1-2020">2-1-2020</label><br>
+        <input type="number" name="att255-2" id="255-2" required><br>
+        <label for="4-1-2020">4-1-2020</label><br>
+        <input type="number" name="att255-4" id="255-4" required><br>
+        <label for="5-1-2020">5-1-2020</label><br>
+        <input type="number" name="att255-5" id="255-5" required><br>
+        
+
+        <button id="addBtn" class="btn waves-effect waves-light">Add</button>
+        
+    </form>
+  </main>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    //<firebase-configuration-goes-here>
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+    <script src="./function.js"> </script>
+  
+
+</body>
+</html>  

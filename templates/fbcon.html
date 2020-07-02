@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+	<script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+    <title>Freaky Firebase</title>
+  </head>
+  <body>
+    <h1>Freaky Firebase Realtime Database</h1>
+	
+	<pre id='object'></pre>
+	
+	
+	<script>
+	  (function(){
+	  
+	  
+	  // Initialize Firebase
+      var firebaseConfig = {
+	      //<firebase-cofiguration-goes-here>
+    };
+    firebase.initializeApp(config);
+	  
+	   /* Data Event Listeners Start */
+       //Data Object Change Listener
+const preObject = document.getElementById('object');
+const dbRefObject = firebase.database().ref().child('object');
+
+dbRefObject.on('value', snap => {
+
+	console.log(snap.val());	
+	preObject.innerText = JSON.stringify(snap.val(), null, 3);
+
+}, function(error) {
+  // The fetch failed.
+  console.error(error);
+});
+
+	  
+	  
+	  
+	   /* Stop */
+	  
+	  
+	  }());
+	</script>
+	
+	
+  </body>
+</html>
